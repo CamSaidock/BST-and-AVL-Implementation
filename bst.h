@@ -462,7 +462,7 @@ void BinarySearchTree<Key, Value>::insert(const std::pair<const Key, Value> &key
 			return;
 		}
 		
-		else {
+		else { //Walk tree to find where to insert new node
 			delete findNode;
 			Node<Key, Value>* itr = this->root_;
 			Node<Key,Value>* itrParent = this->root_; //Keep track of parent in case itr becomes null
